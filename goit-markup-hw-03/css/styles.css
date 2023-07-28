@@ -390,7 +390,7 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 color: #2e2f42;
 margin-bottom: 72px;
-align-items: center;
+text-align: center;
 }
 .ul-our-team-img-text{
 display: flex;
@@ -452,6 +452,19 @@ gap: 24px;
 
 /*section-4*index */
 
+
+
+/* section-5 */
+
+.customers-slogan{
+margin-bottom: 72px;
+color: var(--navyblue, #2E2F42);
+text-align: center;
+
+}
+
+
+/* section-5 */
 
 /*section-2*portfolio*/
 .pic-div{
