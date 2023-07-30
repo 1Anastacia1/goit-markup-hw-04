@@ -471,7 +471,6 @@ align-items: center;
 width: 264px;
 padding-top: 32px;
 padding-bottom: 32px;
-
 }
 .our-team-slogan{
 margin-bottom: 8px;
@@ -530,8 +529,8 @@ transition-property: var(--brand-background-color);
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.our-team-link:hover,
-.our-team-link:focus .our-team-icon{
+.li-icon-team:hover,
+.li-icon-team:focus .our-team-icon{
 background-color: var(--ocean, #404BBF);
 transition-property: var(--brand-background-color);
 transition-duration: 250ms;
@@ -781,10 +780,18 @@ top:0;
   border-radius: 1 px;
   background-color: #ffffff;
 }
+.modal-clouse-window{
+margin-right: 24px;
+margin-top: 24px;
+border-radius: 50%;
+}
 .modal-close-btn{
 position: absolute;
 top: 24px;
 right: 24px;
+}
+.modal-clouse{
+margin: auto;
 }
 .modal-icon-percon::after{
 fill: #2E2F42;
