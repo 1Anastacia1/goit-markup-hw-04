@@ -70,7 +70,8 @@ font-weight:500;
 .header-menu-link::before{
 border-radius: 2px;
 color: #404bbf;
-text-decoration: 250ms;
+transition-property: color, background-color;
+transition-duration: 250ms;
 transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -94,8 +95,8 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 .current:hover
 .current:focus{
 color: #404bbf;
-transition-property: var(--brand-background-color);
-transition-duration: 250ms;
+transition-property: color, background-color;
+transition-duration:250ms;
 transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -104,7 +105,7 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 .header-menu-link:focus{
 border-radius: 2px;
 color: #404bbf;
-
+transition-property: color, background-color;
 transition-duration: 250ms;
 transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -261,6 +262,7 @@ border: 1px solid transparent;
 color: #FFFFFF;
 background-color: #404BBF;
 border: 1px solid transparent;
+transition-property: color, background-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -284,7 +286,7 @@ background-position: center;
 background-size: cover;
 }
 .title-container{
-min-width: 1440рх;
+width: 1440рх;
 
 }
 .title{
@@ -337,7 +339,7 @@ line-height:1.5;
 letter-spacing:0.04em;
 color: #FFF;
 cursor:pointer;
-transition-property: var( #404BBF);
+transition-property: color, background-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -494,7 +496,7 @@ text-align: center;
 font-size: 20px;
 font-weight: 500;
 line-height: 1.2em;
-letter-spacing: 0.2;
+letter-spacing: 0.2em;
 color: var(--navyblue, #2E2F42);
 }
 .our-team-slogan-text{
@@ -541,14 +543,14 @@ display: flex;
 align-items: center;
 justify-content: center;
 background-color: var(--iris, #4D5AE5);
-transition-property: var(--brand-background-color);
+transition-property: color, background-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .li-icon-team:hover,
 .li-icon-team:focus .our-team-icon{
 background-color: var(--ocean, #404BBF);
-transition-property: var(--brand-background-color);
+transition-property: color, background-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -663,7 +665,7 @@ overflow: hidden;
 }
 .picture-list-item-animation:hover .overlay{
   transform: translateY(0);
-  transition: transform 250ms ease-in-out;
+  transition: 250ms ease-in-out;
   max-height: 300px;
   }
 
@@ -767,7 +769,7 @@ justify-content: center;
 border-radius: 50%;
 background-color:  var(--iris, #4D5AE5);
 transition-duration: 250ms;
-transition-property: var(--brand-color);
+transition-property: color, background-color;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-socials-link:hover{
@@ -800,22 +802,26 @@ align-self: center;
 justify-content: center;
 margin-right: 24px;
 margin-top: 24px;
-border-radius: 50%;
 }
 .modal-close{
-padding: 24px;
 width: 24px;
 height: 24px;
+border-radius: 50%;
 justify-content: center;
-fill: var(--cornflower, #E7E9FC);
+background-color: var(--cornflower, #E7E9FC);
 stroke-width: 1px;
-stroke: rgba(0, 0, 0, 0.10);
+color: rgba(0, 0, 0, 0.10);
 }
-.modal-close:hover
+.modal-close:hover{
+color: #ffffff;
+background-color: var(--ocean, #404BBF);
+}
+
 .modal-close:focus{
-fill: var(--ocean, #404BBF);
+color: #ffffff;
+background-color: var(--ocean, #404BBF);
+transition-property: color, background-color;
 transition-duration: 250ms;
-transition-property: var(--brand-color);
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -832,7 +838,7 @@ background-color: var(--cornflower, #E7E9FC);
 
 .modal-icon-percon::after{
 fill: #2E2F42;
-padding: 18;
+padding: 18px;
 content:'';
 position: absolute;
 left: -44px;
