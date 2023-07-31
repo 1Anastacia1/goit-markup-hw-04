@@ -91,8 +91,12 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   background: var(--ocean, #404BBF);
 
 }
-.current:hover{
+.current:hover
+.current:focus{
 color: #404bbf;
+transition-property: var(--brand-background-color);
+transition-duration: 250ms;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -101,21 +105,25 @@ color: #404bbf;
 border-radius: 2px;
 color: #404bbf;
 
-text-decoration: 250ms;
+transition-duration: 250ms;
 transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu-item{
+padding: 24px 0;
 position: relative;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02em;
+display: block;
 text-decoration: none;
+align-items: baseline;
+
 }
 .header-menu-link{
 color: #2e2f42;
-padding: 24px 0;
+
 }
 
 .header-list{
@@ -775,35 +783,36 @@ width: 100%;
 height: 100%;
 background-color: rgba(76, 76, 76, 0.596);
 top:0;
-
 }
 .modal{
   position: absolute;
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
-  width: 400px;
-  min-height: 176px;
-  border-radius: 1 px;
+  min-width: 408px;
+  min-height: 584px;
+  border-radius: 4px;;
   background-color: #ffffff;
 }
-.modal-clouse-window{
+.modal-close-window{
 margin-right: 24px;
 margin-top: 24px;
 border-radius: 50%;
 }
 .modal-close-btn{
+display: flex;
 position: absolute;
+align-items: center;
+align-content: center;
 top: 24px;
 right: 24px;
+border-radius: 50%;
+background-color: var(--cornflower, #E7E9FC);
 }
-.modal-clouse{
-margin: auto;
-}
+
 .modal-icon-percon::after{
 fill: #2E2F42;
 padding: 18;
-
 content:'';
 position: absolute;
 left: -44px;
@@ -811,7 +820,6 @@ right:0 ;
 top:11px;
 bottom: 11px;
 transform: translateY(-50%);
-
 width: 1.25px;
 height: 18px;
 background: #2E2F42;
