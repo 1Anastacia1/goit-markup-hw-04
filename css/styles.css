@@ -71,6 +71,7 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .header-menu{
+
 color:  #2e2f42;
 display: flex;
 gap: 40px;
@@ -81,6 +82,7 @@ position: relative;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .link-portfolio{
+position: relative;
 color: #404bbf; 
 transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -698,6 +700,7 @@ border-radius: 1px;
 background: var(--white, #fff);
 position: relative;
 overflow: hidden;
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .picture-list-item-animation:hover .overlay{
   transform: translateY(0);
@@ -723,26 +726,24 @@ line-height:1.5;
 letter-spacing:0.02em;
 color: #434455;
 }
-.pic-link{
-display: block;
-background: lightgray;
-text-decoration: none;
-transform: translateY(0%);
-}
+
 .pic{
+
 display: block;
 background: lightgray;
 text-decoration: none;
 transform: translateY(0%);
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
+.pic:hover
 .pic-link:hover{
 transform: translateY(0%);
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 0px 1px 1px rgba(46, 47, 66, 0.16),
 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.pic-link:focus{
+.pic:focus
+.pic:focus{
 transform: translateY(0%);
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 0px 1px 1px rgba(46, 47, 66, 0.16),
