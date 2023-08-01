@@ -94,6 +94,7 @@ display: block;
 padding: 24px 0;
 font-size: 16px;
 }
+.header-menu-link::after
 .current::after {
 content:' ';
 position:absolute;
@@ -105,14 +106,15 @@ margin-top:20px;
 border-radius:2px;
 display: block;
 background-color: var(--ocean, #404bbf);
-
 }
+.header-menu-link:hover
 .current:hover{
 color: #404bbf;
 transition-property: color, background-color;
 transition-duration:250ms;
 transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header-menu-link:focus
 .current:focus{
 color: #404bbf;
 transition-property: color, background-color;
