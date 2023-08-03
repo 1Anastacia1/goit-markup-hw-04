@@ -694,6 +694,9 @@ background: var(--white, #fff);
 position: relative;
 overflow: hidden;
 transition:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+border: 1px solid var(--cornflower, #E7E9FC);
+background: var(--white, #FFF);
+
 }
 .picture-list-item-animation:hover .overlay{
   transform: translateY(0);
@@ -703,8 +706,8 @@ transition:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 .picture-heading-text{
-  position: relative;
-  overflow: hidden;
+position: relative;
+overflow: hidden;
 font-weight:500;
 font-size:20px;
 line-height:120%;
@@ -713,9 +716,11 @@ color: #2e2f42;
 margin-bottom: 8px;
 padding-top: 32px;
 padding-bottom: 8px;
+padding-left: 16px;
 }
 
 .picture-text{
+padding-left: 16px;
 font-weight:400;
 font-size:16px;
 line-height:1.5;
