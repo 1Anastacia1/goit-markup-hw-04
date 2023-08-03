@@ -533,7 +533,7 @@ gap: 24px;
 margin-top: 8px;
 
 }
-.li-icon-team{
+.li-icon-team .our-team-link{
 display: flex;
 justify-content:center;
 width: 40px;
@@ -541,6 +541,7 @@ height: 40px;
 fill: #f4f4fd;
 border-radius: 50%;
 background-color:  var(--iris, #4D5AE5);
+transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .our-team-link {
 width:100%;
@@ -551,7 +552,7 @@ justify-content: center;
 background-color: var(--iris, #4d5ae5);
 border-radius: 50%;
 fill: #f4f4fd;
-transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1); 
+
 }
 .our-team-link:hover{
 background-color: var(--ocean, #404bbf);
@@ -586,6 +587,14 @@ align-items: center;
 width: 104px;
 height: 56px;
 }
+.customers-icon:hover {
+color: #404bbf;
+}
+.customers-icon:focus {
+color: #404bbf;
+}
+
+
 .customers-slogan{
 font-size: 36px;
 line-height: 1.11;
@@ -617,17 +626,17 @@ align-items: center;
 justify-content: center;
 border-radius: 4px;
 border: 1px solid var(--lightslate, #8E8F99);
-transition:border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .customers-link:hover {
-color:#404bbf ;
+
 border-color: #404bbf;
 border-radius: 4px;
 border: 1px solid var(--ocean, #404bbf);
 pointer-events: stroke;
 }
 .customers-link:focus {
-color: #404bbf;
+
 border-color: #404bbf;
 border-radius: 4px;
 border: 1px solid var(--ocean, #404bbf);
