@@ -15,7 +15,7 @@
 --brand-background-color: var(--cornflower, #e7e9fc);
 --brand-background-color: var(--ocean, #404BBF);
 --brand-background-color: #4D5AE5;
---brand-background-color: #404bbf;
+--brand-background-color:  var(--ocean, #404bbf);
 --brand-background-color: #F4F4FD;
 --brand-background-color:rgba(244, 244, 253, 1);
 --brand-background-color: var(--navyblue, #2e2f42);
@@ -629,15 +629,15 @@ border: 1px solid var(--lightslate, #8E8F99);
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .customers-link:hover {
-
-border-color: #404bbf;
+color:   var(--ocean, #404bbf);;
+border-color:   var(--ocean, #404bbf);;
 border-radius: 4px;
 border: 1px solid var(--ocean, #404bbf);
 pointer-events: stroke;
 }
 .customers-link:focus {
-
-border-color: #404bbf;
+  color:   var(--ocean, #404bbf);;
+border-color:  var(--ocean, #404bbf);;
 border-radius: 4px;
 border: 1px solid var(--ocean, #404bbf);
 }
@@ -842,6 +842,7 @@ transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-socials-link:hover{
 background-color: var(--green, #31d0aa);
+
 }
 .footer-socials-link:focus{
 background-color: var(--green, #31d0aa);
