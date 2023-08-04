@@ -629,13 +629,18 @@ border-radius: 4px;
 border: 1px solid var(--lightslate, #8E8F99);
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.customers-link:hover .customers-link:focus  {
+.customers-link:hover {
 color: #404bbf;
 border-color: var(--ocean, #404bbf);
 border-radius: 4px;
 border: 1px solid;
 }
-
+.customers-link:focus {
+color: #404bbf;
+border-color: var(--ocean, #404bbf);
+border-radius: 4px;
+border: 1px solid;
+}
 
 /* section-5 */
 
@@ -830,7 +835,6 @@ transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-socials-link:hover{
 background-color: var(--green, #31d0aa);
-
 }
 .footer-socials-link:focus{
 background-color: var(--green, #31d0aa);
