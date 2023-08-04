@@ -757,7 +757,7 @@ transform:translateY(0%);
 .div-picture-heading{
 position: relative;
 overflow: hidden;
-
+transform: translateY(0%);
 border: 1px solid var(--cornflower, #e7e9fc);
 border-top: none;
 background: var(--white, #FFF);
